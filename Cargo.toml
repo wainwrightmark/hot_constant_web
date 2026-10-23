@@ -1,0 +1,11 @@
+[package]
+name = "hot_constant_web"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+web-sys = {version = ">=0.3", features = ["CssStyleDeclaration", "Element", "Window", "Document"], optional = true}
+
+
+[features]
+enable_hot_constant = ["web-sys"]
